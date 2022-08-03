@@ -1,0 +1,23 @@
+.home__img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.img1 {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.img2 {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}

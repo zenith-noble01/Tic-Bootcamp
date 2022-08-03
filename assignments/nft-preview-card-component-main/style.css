@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > .nft__preview {
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 35%;
+  height: 80%;
+}
+
+.nft__preview > .nft__img {
+  width: 100%;
+  height: 50%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.nft__preview > .text__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text__container > h2 {
+  margin: 1rem 0;
+  color: hsl(0, 0%, 100%);
+}
+.text__container > p {
+  color: hsl(215, 51%, 70%);
+}
+
+.text__container > .eth__desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.eth__desc > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(215, 51%, 70%);
+}
+.eth__desc > p:nth-child(1) {
+  color: aqua;
+  font-weight: bold;
+}
+
+.text__container > .eth__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.eth__profile > img {
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: hsl(215, 32%, 27%);
+}
