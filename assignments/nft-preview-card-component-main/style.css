@@ -27,11 +27,42 @@ body {
   height: 80%;
 }
 
-.nft__preview > .nft__img {
+.nft__preview > .nft__img-container {
   width: 100%;
   height: 50%;
   border-radius: 0.5rem;
   object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.nft__img-container > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.nft__img-container > .light__blue__container {
+  height: 100%;
+  width: 100%;
+  background: hsla(178, 100%, 50%, 0.278);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.nft__img-container:hover > .light__blue__container {
+  opacity: 1;
 }
 
 .nft__preview > .text__container {
