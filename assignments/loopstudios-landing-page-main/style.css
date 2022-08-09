@@ -107,3 +107,63 @@ body {
   font-family: "Alata", sans-serif;
   color: hsl(0, 0%, 55%);
 }
+
+/* OUR CREATION STYLES */
+
+.our__Creation {
+  padding: 5rem 7%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.creation__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.creation__header > button {
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px 2.5rem;
+  cursor: pointer;
+  background: transparent;
+  letter-spacing: 2px;
+}
+
+/* .creation__content { */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* gap: 1rem; */
+/* } */
+
+.creation__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.img__container {
+  /* width: 23.5%; */
+  position: relative;
+}
+.img__container > p {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  margin: auto 5%;
+}
+
+.img__container > img {
+  width: 100%;
+}
+.name {
+  position: relative;
+  top: -50px;
+}

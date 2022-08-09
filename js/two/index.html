@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let isLightOn = true;
+      let isRaining = false;
+      let isHungry = false;
+      let isMarried = true;
+
+      let isTrueValue = 4 > 3;
+
+      //undefined
+      let fullName;
+      console.log(fullName);
+
+      //null
+      let empty = null;
+      console.log(empty);
+
+      //operators
+      //arithmetic operators
+
+      const PI = 3.14;
+      let radius = 100; // length  in centimeters
+
+      //area of a circle
+      let areaOfACircle = PI * radius * radius;
+      console.log(areaOfACircle);
+
+      const gravity = 9.81; //in m/s2
+      let mass = 72; //in Killograms
+
+      //let us calculate the weight of an object
+      const weight = mass * gravity;
+      console.log(weight); // 706.32 N(Newton)
+
+      console.log(3 > 2); // true, because 3 is greater than 2
+      console.log(3 >= 2); // true, because 3 is greater than 2
+      console.log(3 < 2); // false,  because 3 is greater than 2
+      console.log(2 < 3); // true, because 2 is less than 3
+      console.log(2 <= 3); // true, because 2 is less than 3
+      console.log(3 == "3"); // true, compare only value
+      console.log(3 === "3"); // false, compare both value and data
+
+      // && (ampersand)  ||(pipe)   !(negation)
+
+      //1 ampersand
+      // const check = 4 > 3 && 10 > 5;  //true && true --> true
+
+      // const check = 4 > 3 && 10 < 5;  //true && false --> false
+
+      // const check = 4 < 3 && 10 < 5;   //false && false --> false
+
+      //2 pipe
+      // const check = 4 > 3 || 10 > 5; //true && true --> true
+
+      // const check = 4 > 3 || 10 < 5; //true && false --> true
+
+      // const check = 4 < 3 || 10 < 5; //false && false --> false
+
+      //3 negation
+      // let check = 4 > 3  // true
+
+      let check = !(4 > 3); //false
+
+      let isLightOnAgain = true;
+
+      let isLightOff = !isLightOnAgain;
+
+      let isMarriedAgain = !false;
+      console.log(isMarriedAgain);
+
+      // how to create and array with values
+      let arr1 = [];
+      //array of numbers
+      let numArr = [1, 2, 3, 4, 5];
+      //array of strings
+      let fruits = ["banana", "orange", "mango", "lemon"];
+
+      fruits[1] = "pear";
+      console.log(fruits);
+
+      let fruitsAndNum = fruits.concat(numArr);
+
+      console.log(fruitsAndNum);
+      // console.log(numArr.length, stringArr.length);
+
+      // array can have items of different data types
+
+      const newArr = [
+        "Zenith",
+        250,
+        true,
+        {
+          country: "CMR",
+          city: "YDE",
+        },
+        {
+          skills: ["HTML", "CSS", "JS", "REACT", "PYTHON"],
+        },
+      ];
+
+      console.log(newArr);
+
+      let js = "JavaScript";
+
+      const charInJavaScript = js.split("");
+
+      console.log(charInJavaScript);
+
+      let companiesString =
+        "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+
+      const companiesArr = companiesString.split(",");
+      console.log(companiesArr);
+
+      let txt =
+        "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python";
+
+      let word = txt.split(" ");
+
+      console.log(word);
+
+      //accessing array items using index
+
+      //removing items from an array
+    </script>
+  </body>
+</html>
